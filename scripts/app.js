@@ -6,13 +6,13 @@ angular.module('rutasApp', [
 	$urlRouterProvider.otherwise('/')
 
 	$stateProvider
-		.state('main', {
-			url: '/main',
-			template: '<h2>Hola  al principal</h2><p>Este es un parrafo sencillo</p>'
+		.state('Entidades', {
+			url: '/enti',
+			template: '<h2>Hola aqui estan las entidades</h2><a ui-sref="entidades">Ir a las entidades</a><div ui-view></div>'
 		})
-		.state('usuarios', {
-			url: '/users',
-			template: '<h2>Modificación de usuarios</h2><a ui-sref="usuarios.listado">Ir al usuarios</a><div ui-view>Aqui el listado</div>'
+		.state('Categorias', {
+			url: '/cate',
+			template: '<h2>Aqui estan las categorias</h2><a ui-sref="categorias">Ir a las categorias</a><div ui-view></div>'
 		});
 
 }])
